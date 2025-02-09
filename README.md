@@ -1,3 +1,3 @@
 # qa-automation-homeworks
 
-homework-3 -> comtains homework for lesson 3
+homework-3 -> contains homework for lesson 3
