@@ -17,4 +17,6 @@ function processRandomUserData(data) {
 }
 
 const urlRandomUser = 'https://randomuser.me/api/';
-fetchRandomUserData(urlRandomUser);
+(async () => {
+    await fetchRandomUserData(urlRandomUser);
+})();

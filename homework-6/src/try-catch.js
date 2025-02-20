@@ -34,4 +34,6 @@ function processData(data) {
 }
 
 // Call the fetchData function with an invalid URL to trigger the error
-fetchData('https://invalid-url.example.com');
+(async () => {
+    await fetchData('https://invalid-url.example.com');
+})();
