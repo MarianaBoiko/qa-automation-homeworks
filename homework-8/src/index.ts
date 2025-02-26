@@ -1,18 +1,13 @@
-import { fetchUserData } from './api';
+import { getUserJson } from './interfaces';
 import { UserSummary } from './transformer';
-import { UserCompanyProfile } from './class';
+import { UserEntity } from './abstraction';
 
-async function main(): Promise<void> {
-    try {
-        const user = await fetchUserData();
-        const summary = new UserSummary(user);
-        console.log(summary.getSummary());
+(async () => {
+    const userProfile = await getUserJson();
 
-        const userProfile = new UserCompanyProfile(user.company);
-        console.log(userProfile.getProfile());
-    } catch (error) {
-        console.error('Failed to fetch and transform user data:', error);
-    }
-}
+    const userSummary = new UserSummary(userProfile);
+    console.log(userSummary.getSummary());
 
-main();
+    const userEntity = new UserEntity(userProfile);
+    console.log(userEntity.getDetails());
+})();

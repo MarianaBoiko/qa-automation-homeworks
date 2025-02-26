@@ -10,11 +10,3 @@ Description of the task:
 - Create an abstraction.ts file in which to come up with a composition to follow and implement abstraction and inheritance.
 - Prepare an index.ts file in which to create class instances and try to
   manipulate objects through their methods.
-
-Files:
-
-- api.ts -> Handles API requests using Fetch
-- models.ts -> Defines TypeScript interfaces
-- transformer.ts -> Converts API data into a summary format
-- class.ts -> Defines custom class UserCompanyProfile with method
-- index.ts -> Runs the program & logs output
