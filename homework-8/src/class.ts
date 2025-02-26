@@ -1,4 +1,4 @@
-import { Company } from './models';
+import { Company } from './interfaces';
 
 export class UserCompanyProfile {
     public company: Company;

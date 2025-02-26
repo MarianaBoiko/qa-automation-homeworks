@@ -1,4 +1,4 @@
-import { User } from './models';
+import { User } from './interfaces';
 
 export class UserSummary {
     public fullName: string;
