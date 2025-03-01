@@ -5,6 +5,4 @@ export interface Vehicle {
     accelerate(): void;
     brake(): void;
     drive(distance: number): void;
-    fuelConsumption(): void;
-    operateVehicle(distance: number): void;
 }
